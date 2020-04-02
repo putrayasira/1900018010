@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form.html</title>
+</head>
+<body>
+
+	<form action="/action_page.php">
+		<div align="left" style="border: 1px solid black"><br>
+
+		<h1 align="center">Form Kesehatan Karyawan PT Pengangguran Sukses</h1>
+
+		<p align="center">Form ini ditunjukkan untuk mendata kesehatan tiap tiap karyawan PT Pengangguran Sukses.
+		Harap diisi dengan sejujur jujurnya.</p>
+
+	<table>
+		<tr>
+		<div><label for="name"><b> Nama Lengkap </b>: </label>
+		<input type="text" id="name" size="60" ></div>
+		</tr>
+		<tr></tr>
+		<tr>
+		<td>
+		<div>
+		<label for="ttl"><b>Tempat Tanggal Lahir : </b></label>
+		<input type="text" id="ttl" size="70" placeholder="exp:Banjarmasin, 23-02-1997">	
+		</div>	
+		</td>
+		</tr>
+		<tr>
+		<td><div><label for="jenis kelamin"><b>Jenis Kelamin </b>: </label>
+		<input type="radio" id="Laki laki" name="Jenis kelamin" value="Laki laki">
+		<label for="laki laki"> Laki laki</label>
+		<input type="radio" id="Perempuan" name="Jenis kelamin" value="Perempuan">
+		<label for="Perempuan"> Perempuan</label>
+		<input type="radio" id="lainlain" name="Jenis kelamin" value="lainlain">
+		<label for="lainlain"> lain lain</label></div>
+		</tr>
+		<tr></tr>
+		<tr>
+		<td><div><label for="almtname"><b> Alamat Lengkap </b>: </label>
+		<input type="text" id="almtname" size="60"></div>
+		</td>
+		</tr>
+		<tr></tr>
+		<tr>
+		<td><div><label for="telpname"><b> Nomor Telepon</b>: </label>
+		<input type="text" id="telpname" placeholder="08xxxxxxxxxx"></div>
+		</td>
+		</tr>
+		<tr></tr>
+		<tr>
+		<td><div><label for="agama"><b>Agama </b>: </label>
+		<select id="agama" name="agama">
+			<option value="Islam">Islam</option>
+			<option value="Kristen">Kristen</option>
+			<option value="Hindu">Hindu</option>
+			<option value="Budha">Budha</option>
+			<option value="konghucu">konghucu</option>
+		</select></td></div>
+		</tr>
+		<tr></tr>
+		<tr>
+		<td><div><label for="Kesehatan"><b>Tulislah secara rinci penyakit yang sedang dirasakan sekarang </b>:</label>
+		<textarea name="Kesehatan"></textarea></div>
+		</td>
+		</tr>
+
+	</table>
+
+		<div align="center">
+		<button type="submit" value="simpan">Simpan </button>
+		<button type="reset" value="batal"> batal</button></div>
+		</div>	
+
+	</form>
+
+</body>
+</html>
