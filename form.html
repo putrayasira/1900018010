@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form action="/action_page.php">
+	<form action="hasilkesehatan.php" method="POST">
 		<div align="left" style="border: 1px solid black"><br>
 
 		<h1 align="center">Form Kesehatan Karyawan PT Pengangguran Sukses</h1>
@@ -16,36 +16,34 @@
 	<table>
 		<tr>
 		<div><label for="name"><b> Nama Lengkap </b>: </label>
-		<input type="text" id="name" size="60" ></div>
+		<input type="text" id="name" size="60" name="nama" required></div>
 		</tr>
 		<tr></tr>
 		<tr>
 		<td>
 		<div>
 		<label for="ttl"><b>Tempat Tanggal Lahir : </b></label>
-		<input type="text" id="ttl" size="70" placeholder="exp:Banjarmasin, 23-02-1997">	
+		<input type="date" id="ttl" size="70" placeholder="exp:Banjarmasin, 23-02-1997" name="ttl" required>	
 		</div>	
 		</td>
 		</tr>
 		<tr>
 		<td><div><label for="jenis kelamin"><b>Jenis Kelamin </b>: </label>
-		<input type="radio" id="Laki laki" name="Jenis kelamin" value="Laki laki">
+		<input type="radio" id="Laki laki" name="Jeniskelamin" value="Laki laki" checked>
 		<label for="laki laki"> Laki laki</label>
-		<input type="radio" id="Perempuan" name="Jenis kelamin" value="Perempuan">
-		<label for="Perempuan"> Perempuan</label>
-		<input type="radio" id="lainlain" name="Jenis kelamin" value="lainlain">
-		<label for="lainlain"> lain lain</label></div>
+		<input type="radio" id="Perempuan" name="Jeniskelamin" value="Perempuan">
+		<label for="Perempuan"> Perempuan</label></div>
 		</tr>
 		<tr></tr>
 		<tr>
 		<td><div><label for="almtname"><b> Alamat Lengkap </b>: </label>
-		<input type="text" id="almtname" size="60"></div>
+		<input type="text" id="almtname" size="60" name="alamat" required></div>
 		</td>
 		</tr>
 		<tr></tr>
 		<tr>
 		<td><div><label for="telpname"><b> Nomor Telepon</b>: </label>
-		<input type="text" id="telpname" placeholder="08xxxxxxxxxx"></div>
+		<input type="number" id="telpname" placeholder="08xxxxxxxxxx" name="nomor" required></div>
 		</td>
 		</tr>
 		<tr></tr>
@@ -62,7 +60,7 @@
 		<tr></tr>
 		<tr>
 		<td><div><label for="Kesehatan"><b>Tulislah secara rinci penyakit yang sedang dirasakan sekarang </b>:</label>
-		<textarea name="Kesehatan"></textarea></div>
+		<textarea name="Kesehatan" required></textarea></div>
 		</td>
 		</tr>
 
